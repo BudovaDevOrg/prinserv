@@ -1,0 +1,3 @@
+COMPOSE_PROJECT_NAME=prinserv_test
+EXTERNAL_PORT=40791
+ENV=production
