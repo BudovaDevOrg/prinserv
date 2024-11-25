@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  prinserv:
+    build:
+      context: .
+    container_name: ${COMPOSE_PROJECT_NAME}_prinserv
+    ports:
+      - "${EXTERNAL_PORT}:8000"
+    environment:
+      - ENV=${ENV}
+    volumes:
+      - ./app/templates:/usr/src/app/app/templates
